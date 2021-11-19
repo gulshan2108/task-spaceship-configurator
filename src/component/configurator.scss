@@ -1,0 +1,152 @@
+body {
+    background: #051544 !important;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace !important;
+}
+.spaceship-config-box {
+    border: 1px solid #7BF762;
+    border-radius: 8px;
+    padding: 32px;
+    margin: 35px auto;
+    .config-heading {
+        font-size: 24px;
+        color: #7BF762;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        letter-spacing: 0.2em;
+        font-weight: normal;
+        text-align: center;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+    .calculate-box {
+        background: #1C3C16;
+        border: 1px solid #7BF762;
+        border-radius: 8px;
+        margin-top: 35px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                color: #7BF762;
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: 0.2em;
+                display: flex;
+                margin-bottom: 14px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                span {
+                    color: #fff;
+                    text-align: left;
+                    margin-left: auto;
+                }
+            }
+        }
+        .calculate-header {
+            padding: 16px;
+        }
+        .calculate-footer {
+            padding: 20px;
+            border-top: 1px solid #7BF762;
+            ul {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .color-box {
+        border: 1px solid #5A8F4F;;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width: 575px) {
+            margin-bottom: 25px;
+        }
+        .color-card {
+            display: block;
+            width: 40%;
+            min-height: 50px;
+            margin: 0 auto 10px;
+            border-radius: 8px;
+            @media screen and (max-width: 767px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 575px) {
+                width: 100%;
+            }
+        }
+        .card-value {
+            color: #5A8F4F;
+            font-weight: normal;
+            font-size: 14px;
+            margin-bottom: 15px;
+            &.capital {
+                text-transform: uppercase;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &.active{
+            border: 1px solid #7BF762;
+            box-shadow: 0px 0px 10px 0px #7bf76259;
+            .card-value {
+                color: #7BF762;
+            }
+        }
+        &.package {
+            padding: 0px;
+            opacity: 0.8;
+            &.active {
+                opacity: 1;
+            }
+            .package-head {
+                padding: 16px;
+            }
+            .feature-list {
+                list-style: none;
+                padding: 20px;
+                margin: 0px;
+                background: #1C3C16;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 8px;
+                min-height: 180px;
+                @media screen and (max-width: 767px) {
+                    min-height: 150px;
+                }
+                @media screen and (max-width: 575px) {
+                    min-height: auto;
+                }
+                li {
+                    display: flex;
+                    color: #7BF762;
+                    font-weight: normal;
+                    font-size: 14px;
+                    .icon {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .card-title-1 {
+        color: #7BF762;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 14px;
+        margin-top: 40px;
+        @media screen and (max-width: 767px) {
+            margin-top: 10px;
+        }
+    }
+}
